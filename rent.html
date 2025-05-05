@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VestaSim</title>
+  <link rel="stylesheet" href="rent.css">
+  <script src="login.js" defer></script>
+
+</head>
+<body>
+  <!--Navigation bar nato-->
+  <nav class="navbar">
+    <h1 class="logo">VestaSim</h1>
+      <ul class="navlinks">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li>
+          <a href="#properties">Properties</a>
+          <ul class="dropdown">
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="rent.html">Rent</a></li>
+          </ul>
+        </li>
+        <li><a href="home.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li class="ctn"><a href="#contact">Contact</a></li>
+        <li id="ctn" class="log-btn"><a href="#login">Log In</a></li> 
+      </ul>
+    <img class="menubtn" src="menubtn.png" alt="">
+  </nav>
+
+  <!--header content here-->
+  <section id="home">
+    <header>
+      <div class="home-content">
+        <h2>Simulate, Invest, and Grow on your path to property success</h2>
+        <div class="line"></div>
+        <h1>Rent Now!</h1>
+      </div>
+    </header>
+  </section>
+
+  <!--buy and sell content here-->
+<section id="buysell">
+  <div class="title">
+    <h1>Own a property and Sell it!</h1>
+    <div class="line"></div>
+  </div>
+  <div class="row-buysell">
+
+     <!-- Apartment 1-->
+      <div class="col-buysell">
+          <img src="aprtment1.webp" alt="Breathtaking penthouse apartment">
+          <div class="apartment-info">
+              <h3>Breathtaking penthouse apartment</h3>
+              <div class="details">
+                <span>3 bedroom</span>
+                <span>2 bathroom</span>
+              </div>
+              <div class="details">
+                <span>144 m²</span>
+                <span class="price">Starting from Free</span>
+              </div>
+          </div>
+          <div class="actions"><button onClick="viewBtn()">VIEW</button></div>
+      </div>
+
+      <div id="apartmentModal" class="modal">
+        <div class="modal-content wide-modal">  
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-body">
+          <img src="night1.jpg" alt="Breathtaking penthouse apartment" class="modal-image"> 
+          <img src="night4.jpg" alt="" class="modal-image">  
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Apartment 2 -->
+      <div class="col-buysell">
+          <img src="aprtment2.webp" alt="Affordable standard apartment">
+          <div class="apartment-info">
+            <h3>Affordable standard apartment</h3>
+              <div class="details">
+                <span>1 bedroom</span>
+                <span>1 bathroom</span>
+              </div>
+              <div class="details">
+                <span>69 m²</span>
+                <span class="price">Starting from Free</span>
+              </div>
+          </div>
+          <div class="actions"><button onClick="viewBtn2()">VIEW</button></div>
+      </div>
+
+      <div id="apartmentModal2" class="modal">
+        <div class="modal-content wide-modal">
+          <span class="close" onclick="closeModal2()">&times;</span>
+          <div class="modal-body">
+          <img src="ground1.jpg" alt="Affordable standard apartment" class="modal-image">  
+          <img src="ground2.jpg" alt="Affordable standard apartment" class="modal-image"> 
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Apartment 3 -->
+      <div class="col-buysell">
+          <img src="aprtment3.webp" alt="Comfortable Apartment">
+            <div class="apartment-info">
+              <h3>Luxury Comfortable Apartment</h3>
+              <div class="details">
+                <span>1 bedroom</span>
+                <span>1 bathroom</span>
+              </div>
+              <div class="details">
+                <span>69 m²</span>
+                <span class="price">Starting from $30.00</span>
+              </div>
+          </div>
+          <div class="actions"><button onClick="viewBtn3()">VIEW</button></div>
+      </div>
+
+      <div id="apartmentModal3" class="modal">
+        <div class="modal-content wide-modal">
+          <span class="close" onclick="closeModal3()">&times;</span>
+          <div class="modal-body">
+          <img src="ground1.jpg" alt="Affordable standard apartment" class="modal-image">  
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Apartment 4 -->
+      <div class="col-buysell">
+        <img src="apartment4.webp" alt="Comfortable Apartment">
+          <div class="apartment-info">
+            <h3>Luxury Comfortable Apartment</h3>
+            <div class="details">
+              <span>1 bedroom</span>
+              <span>1 bathroom</span>
+            </div>
+            <div class="details">
+              <span>69 m²</span>
+              <span class="price">Starting from $30.00</span>
+            </div>
+        </div>
+        <div class="actions"><button onClick="viewBtn4()">VIEW</button></div>
+      </div>
+
+      <div id="apartmentModal4" class="modal">
+        <div class="modal-content wide-modal">
+          <span class="close" onclick="closeModal4()">&times;</span>
+          <div class="modal-body">
+          <img src="seaview1.webp" alt="Affordable standard apartment" class="modal-image">  
+          <img src="seaviwe2.avif" alt="Affordable standard apartment" class="modal-image">
+          <img src="seaview3.webp" alt="Affordable standard apartment" class="modal-image">
+          <img src="seaview4.jpg" alt="Affordable standard apartment" class="modal-image">
+          <img src="seaview5.jpg" alt="Affordable standard apartment" class="modal-image">
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apartment 5 -->
+      <div class="col-buysell">
+      <img src="apartment5.webp" alt="Comfortable Apartment">
+        <div class="apartment-info">
+          <h3>Luxury Comfortable Apartment</h3>
+          <div class="details">
+            <span>1 bedroom</span>
+            <span>1 bathroom</span>
+          </div>
+          <div class="details">
+            <span>69 m²</span>
+            <span class="price">Starting from $30.00</span>
+          </div>
+      </div>
+      <div class="actions"><button onClick="viewBtn5()">VIEW</button></div>
+      </div>
+
+      
+      <div id="apartmentModal5" class="modal">
+        <div class="modal-content wide-modal">
+          <span class="close" onclick="closeModal5()">&times;</span>
+          <div class="modal-body">
+          <img src="forest1.webp" alt="Affordable standard apartment" class="modal-image">  
+          <img src="forest2.avif" alt="Affordable standard apartment" class="modal-image">  
+          <img src="forest3.avif" alt="Affordable standard apartment" class="modal-image">   
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apartment 6 -->
+      <div class="col-buysell">
+    <img src="apartment6.webp" alt="Comfortable Apartment">
+      <div class="apartment-info">
+        <h3>Luxury Comfortable Apartment</h3>
+        <div class="details">
+          <span>1 bedroom</span>
+          <span>1 bathroom</span>
+        </div>
+        <div class="details">
+          <span>69 m²</span>
+          <span class="price">Starting from $30.00</span>
+        </div>
+    </div>
+    <div class="actions"><button onClick="viewBtn6()">VIEW</button></div>
+      </div>
+
+       
+      <div id="apartmentModal6" class="modal">
+        <div class="modal-content wide-modal">
+          <span class="close" onclick="closeModal6()">&times;</span>
+          <div class="modal-body">
+          <img src="pool1.avif" alt="Affordable standard apartment" class="modal-image">  
+          <img src="pool2.avif" alt="Affordable standard apartment" class="modal-image">  
+          <img src="pool3.jpg" alt="Affordable standard apartment" class="modal-image">  
+          <img src="pool4.webp" alt="Affordable standard apartment" class="modal-image">  
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Apartment 7 -->
+      <div class="col-buysell">
+  <img src="apartment7.webp" alt="Comfortable Apartment">
+    <div class="apartment-info">
+      <h3>Luxury Comfortable Apartment</h3>
+      <div class="details">
+        <span>1 bedroom</span>
+        <span>1 bathroom</span>
+      </div>
+      <div class="details">
+        <span>69 m²</span>
+        <span class="price">Starting from $30.00</span>
+      </div>
+  </div>
+  <div class="actions"><button onClick="viewBtn7()">VIEW</button>
+  </div>
+      </div>
+
+       
+      <div id="apartmentModal7" class="modal">
+        <div class="modal-content wide-modal">
+          <span class="close" onclick="closeModal7()">&times;</span>
+          <div class="modal-body">
+          <img src="build1.jpg" alt="Affordable standard apartment" class="modal-image">  
+          <img src="build2.jpg" alt="Affordable standard apartment" class="modal-image">  
+          <img src="build3.jpg" alt="Affordable standard apartment" class="modal-image"> 
+            <div class="modal-text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+ 
+
+<!-- Apartment 8 -->
+<div class="col-buysell" onclick="viewApartment('apartment8.webp', 'Cozy Studio Apartment', '1 bedroom', '1 bathroom', '50 m²', '$25.00', ['apartment8.webp', 'apartment-cr2.jpg', 'apartment-cr2.jpg'])">
+  <img src="apartment8.webp" alt="Cozy Studio Apartment">
+  <div class="apartment-info">
+    <h3>Cozy Studio Apartment</h3>
+    <div class="details">
+      <span>1 bedroom</span>
+      <span>1 bathroom</span>
+    </div>
+    <div class="details">
+      <span>50 m²</span>
+      <span class="price">Starting from $25.00</span>
+    </div>
+  </div>
+  <div class="actions"><button onClick="viewBtn8()">VIEW</button></div>
+</div>
+
+ 
+<div id="apartmentModal8" class="modal">
+  <div class="modal-content wide-modal">
+    <span class="close" onclick="closeModal8()">&times;</span>
+    <div class="modal-body">
+    <img src="cozy1.jpg" alt="Affordable standard apartment" class="modal-image">  
+    <img src="cozy2.webp" alt="Affordable standard apartment" class="modal-image">  
+    <img src="cozy3.webp" alt="Affordable standard apartment" class="modal-image">  
+      <div class="modal-text">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Apartment 9 -->
+<div class="col-buysell" onclick="viewApartment('apartment8.webp', 'Cozy Studio Apartment', '1 bedroom', '1 bathroom', '50 m²', '$25.00', ['apartment8.webp', 'apartment-cr2.jpg', 'apartment-cr2.jpg'])">
+  <img src="apartment9.webp" alt="Cozy Studio Apartment">
+  <div class="apartment-info">
+    <h3>Cozy Studio Apartment</h3>
+    <div class="details">
+      <span>1 bedroom</span>
+      <span>1 bathroom</span>
+    </div>
+    <div class="details">
+      <span>50 m²</span>
+      <span class="price">Starting from $25.00</span>
+    </div>
+  </div>
+  <div class="actions"><button onClick="viewBtn9()">VIEW</button></div>
+</div>
+
+ 
+<div id="apartmentModal9" class="modal">
+  <div class="modal-content wide-modal">
+    <span class="close" onclick="closeModal9()">&times;</span>
+    <div class="modal-body">
+    <img src="red.jpg" alt="Affordable standard apartment" class="modal-image">  
+    <img src="red3.avif" alt="Affordable standard apartment" class="modal-image">  
+    <img src="red2.jpg" alt="Affordable standard apartment" class="modal-image">  
+      <div class="modal-text">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Structure -->
+<div id="apartmentModal" class="modal">
+  <div class="modal-content wide-modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-body">
+      <!-- Multiple images inside the modal -->
+      <img src="apartment8.webp" alt="Luxury Apartment" class="modal-image">
+      <img src="apartment-cr.jpg" alt="CR" class="modal-image">
+      <img src="apartment-cr.jpg" alt="CR" class="modal-image">
+      
+      <!-- Modal text content (if needed for apartment details) -->
+      <div class="modal-text">
+        <!-- Example of additional info, can be populated dynamically -->
+        <h3>Apartment Details</h3>
+        <p><strong>Bedroom:</strong> 1 bedroom</p>
+        <p><strong>Bathroom:</strong> 1 bathroom</p>
+        <p><strong>Size:</strong> 69 m²</p>
+        <p><strong>Price:</strong> Starting from $30.00</p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+  </div>
+</section>
+
+<!-- Apartment Modal -->
+<div id="apartmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Apartment Image">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDetails1"></p>
+    <p id="modalDetails2"></p>
+    <p id="modalPrice"></p>
+  </div>
+</div>
+
+
+<!--Login Form-->
+<div class="blur-bg-overlay"></div>
+  <div class="form-popup" id="form-popup">
+      <span class="close-btn material-symbols-rounded">&#10006</span>
+      <div class="form-box login">
+          <div class="form-details">
+              <h2>Welcome Back</h2>
+              <p>Please Login your personal account</p>
+          </div>
+          <div class="form-content">
+              <h2>LOGIN</h2>
+              <form action="#" method="post">
+                  <div class="input-field">
+                      <input type="text" required>
+                      <label id="email">Email</label>
+                  </div>
+                  <div class="input-field">
+                      <input type="password" required>
+                      <label id="password">Password</label>
+                  </div>  
+                  <a href="#" class="forgot-pass">Forgot Password?</a>
+                  <button type="submit" id="loginBtn">Log In</button>
+              </form>
+              <div class="bottom-link">Don't have an account?<a href="#" id="signup-link"> Signup</a></div>
+          </div>
+      </div>
+      <div class="form-box signup">
+          <div class="form-details">
+              <h2>Create Account</h2>
+              <p>Be part of our fast growing company!</p>
+          </div>
+          <div class="form-content">
+              <h2>SIGNUP</h2>
+              <form action="#">
+                  <div class="input-field">
+                      <input type="text" required>
+                      <label>Enter your email</label>
+                  </div>
+                  <div class="input-field">
+                      <input type="password" required>
+                      <label>Create password</label>
+                  </div>  
+                  <div class="policy-text">
+                      <input type="checkbox" id="policy">
+                      <label for="policy">I agree the <a href="#">Terms & Conditions</a> </label>
+                  </div>
+                  <button type="submit">Sign Up</button>
+              </form>
+              <div class="bottom-link"> Already have an account? <a href="#" id="login-link">Login</a> </div>
+          </div>
+      </div>
+  </div>
+
+<!--footer section diri-->
+<section id="footer">
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>At VestaSim, we make buying, selling, and renting properties simple, secure,
+              and seamless. Whether you're looking for your dream home, listing a property,
+              or finding the perfect rental.
+            </p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2 id="contact">Contact Us</h2>
+            <p>Email: vestasim@gmail.com</p>
+            <p>Phone: 09484463845</p>
+            <p>Address: Agujo Daanbantayan, cebu, Philippines</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025VESTASIM. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</section>
+
+<script src="login.js" defer></script>
+<script src=".js/modal.js"></script>
+</body>
+
+<script>
+  function viewBtn() {
+    document.getElementById('apartmentModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('apartmentModal').style.display = 'none';
+  }
+
+
+  function viewBtn2() {
+    document.getElementById('apartmentModal2').style.display = 'block';
+  }
+
+  function closeModal2() {
+    document.getElementById('apartmentModal2').style.display = 'none';
+  }
+
+  function viewBtn3() {
+    document.getElementById('apartmentModal3').style.display = 'block';
+  }
+
+  function closeModal3() {
+    document.getElementById('apartmentModal3').style.display = 'none';
+  }
+
+  function viewBtn4() {
+    document.getElementById('apartmentModal4').style.display = 'block';
+  }
+
+  function closeModal4() {
+    document.getElementById('apartmentModal4').style.display = 'none';
+  }
+  
+  function viewBtn5() {
+    document.getElementById('apartmentModal5').style.display = 'block';
+  }
+
+  function closeModal5() {
+    document.getElementById('apartmentModal5').style.display = 'none';
+  }
+
+  function viewBtn6() {
+    document.getElementById('apartmentModal6').style.display = 'block';
+  }
+
+  function closeModal6() {
+    document.getElementById('apartmentModal6').style.display = 'none';
+  }
+
+  function viewBtn7() {
+    document.getElementById('apartmentModal7').style.display = 'block';
+  }
+
+  function closeModal7() {
+    document.getElementById('apartmentModal7').style.display = 'none';
+  }
+
+  function viewBtn8() {
+    document.getElementById('apartmentModal8').style.display = 'block';
+  }
+
+  function closeModal8() {
+    document.getElementById('apartmentModal8').style.display = 'none';
+  }
+
+  function viewBtn9() {
+    document.getElementById('apartmentModal9').style.display = 'block';
+  }
+
+  function closeModal9() {
+    document.getElementById('apartmentModal9').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('apartmentModal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+
+  // 👇 NEW: Close modal when user scrolls
+  window.addEventListener('scroll', function() {
+    const modal = document.getElementById('apartmentModal');
+    if (modal.style.display === 'block') {
+      closeModal();
+    }
+  });
+</script>
+
+
+
+</html>
